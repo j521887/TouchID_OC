@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)settingBtnClick:(id)sender;
 
 @end
 

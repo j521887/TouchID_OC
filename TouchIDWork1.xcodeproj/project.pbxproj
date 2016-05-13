@@ -13,6 +13,9 @@
 		CBD6F1901CE4318B00D18F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6F18E1CE4318B00D18F2E /* Main.storyboard */; };
 		CBD6F1921CE4318B00D18F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6F1911CE4318B00D18F2E /* Assets.xcassets */; };
 		CBD6F1951CE4318B00D18F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6F1931CE4318B00D18F2E /* LaunchScreen.storyboard */; };
+		CBD6F19F1CE5816900D18F2E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6F19D1CE5816900D18F2E /* SettingViewController.m */; };
+		CBD6F1A01CE5816900D18F2E /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6F19E1CE5816900D18F2E /* SettingViewController.xib */; };
+		CBD6F1A21CE587CB00D18F2E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6F1A11CE587CB00D18F2E /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		CBD6F1911CE4318B00D18F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD6F1941CE4318B00D18F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD6F1961CE4318B00D18F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD6F19C1CE5816900D18F2E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		CBD6F19D1CE5816900D18F2E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		CBD6F19E1CE5816900D18F2E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		CBD6F1A11CE587CB00D18F2E /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +69,11 @@
 				CBD6F1891CE4318B00D18F2E /* AppDelegate.m */,
 				CBD6F18B1CE4318B00D18F2E /* ViewController.h */,
 				CBD6F18C1CE4318B00D18F2E /* ViewController.m */,
+				CBD6F1A11CE587CB00D18F2E /* ViewController.xib */,
 				CBD6F18E1CE4318B00D18F2E /* Main.storyboard */,
+				CBD6F19C1CE5816900D18F2E /* SettingViewController.h */,
+				CBD6F19D1CE5816900D18F2E /* SettingViewController.m */,
+				CBD6F19E1CE5816900D18F2E /* SettingViewController.xib */,
 				CBD6F1911CE4318B00D18F2E /* Assets.xcassets */,
 				CBD6F1931CE4318B00D18F2E /* LaunchScreen.storyboard */,
 				CBD6F1961CE4318B00D18F2E /* Info.plist */,
@@ -110,6 +121,7 @@
 				TargetAttributes = {
 					CBD6F1811CE4318B00D18F2E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 42RY482EA3;
 					};
 				};
 			};
@@ -136,9 +148,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD6F1A21CE587CB00D18F2E /* ViewController.xib in Resources */,
 				CBD6F1951CE4318B00D18F2E /* LaunchScreen.storyboard in Resources */,
 				CBD6F1921CE4318B00D18F2E /* Assets.xcassets in Resources */,
 				CBD6F1901CE4318B00D18F2E /* Main.storyboard in Resources */,
+				CBD6F1A01CE5816900D18F2E /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +166,7 @@
 				CBD6F18D1CE4318B00D18F2E /* ViewController.m in Sources */,
 				CBD6F18A1CE4318B00D18F2E /* AppDelegate.m in Sources */,
 				CBD6F1871CE4318B00D18F2E /* main.m in Sources */,
+				CBD6F19F1CE5816900D18F2E /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TouchIDWork1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WJC.TouchIDWork1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TouchIDWork1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WJC.TouchIDWork1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
