@@ -1,0 +1,1 @@
+CREATE TABLE `NewTable` (`id`  int(11) NOT NULL ,`test1`  varchar(255) NULL ,PRIMARY KEY (`id`));
